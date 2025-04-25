@@ -72,12 +72,14 @@ const data = [
     }
 ];
 
-const table = document.querySelector('table');
+const table = document.querySelector('table tbody');
 
 let chart = null;
 
 const chartRow = document.createElement('tr');
 chartRow.innerHTML = '<td colspan="4"><div id="chart-container"></div></td>';
+
+
 
 data.forEach(function (elem, index) {
     const tr = document.createElement('tr');
