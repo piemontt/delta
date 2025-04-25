@@ -1,0 +1,69 @@
+@font-face {
+	font-family: "FuturaBookC";
+	src: url("src/fonts/futurabookc.eot");
+	src: url("src/fonts/futurabookc.eot?#iefix") format("embedded-opentype"),
+	url("src/fonts/futurabookc.woff2") format("woff2"),
+	url("src/fonts/futurabookc.woff") format("woff"),
+	url("src/fonts/futurabookc.ttf") format("truetype"),
+	url("src/fonts/futurabookc.svg#futurabookc") format("svg");
+}
+html, body {
+	font-family: "FuturaBookC", sans-serif;
+	color: #2B303BFF;
+	max-width: 100%;
+	overflow-x: hidden;
+}
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 20px;
+	border: 1px solid #ededed;
+}
+.wrap {
+	padding: 30px 400px;
+}
+th, td {
+	border: 5px solid #fff;
+	padding: 18px 20px;
+	text-align: left;
+}
+td {
+	background-color: #F5F5F5FF;
+	cursor: pointer;
+}
+tr td:nth-child(2) {
+	background-color: #EEF9FFFF;
+}
+tr:first-child td {
+	text-align: center;
+}
+tr td:not(:first-child) {
+	text-align: center;
+}
+.yesterday {
+	display: flex;
+	border: unset;
+	justify-content: flex-end;
+}
+.green {
+	background-color: #ECF7E7FF;
+}
+.green span:last-child, .gray span:last-child {
+	flex-basis: 50%;
+	font-weight: bold;
+	color: #4A964DFF;
+}
+.red {
+	background-color: #FEE6E6FF;
+}
+.red span:last-child {        
+	flex-basis: 50%;
+	font-weight: bold;
+	color: #FE3F46FF;
+}
+.gray {
+	background-color: #F5F5F5FF;
+}
+.selected-row {
+
+}
