@@ -22,7 +22,7 @@ table {
 .wrap {
 	padding: 30px 400px;
 }
-th, td {
+td {
 	border: 5px solid #fff;
 	padding: 18px 20px;
 	text-align: left;
@@ -41,14 +41,19 @@ tr td:not(:first-child) {
 	text-align: center;
 }
 .yesterday {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	border: unset;
+	-webkit-box-pack: end;
+	-ms-flex-pack: end;
 	justify-content: flex-end;
 }
 .green {
 	background-color: #ECF7E7FF;
 }
 .green span:last-child, .gray span:last-child {
+	-ms-flex-preferred-size: 50%;
 	flex-basis: 50%;
 	font-weight: bold;
 	color: #4A964DFF;
@@ -57,13 +62,11 @@ tr td:not(:first-child) {
 	background-color: #FEE6E6FF;
 }
 .red span:last-child {        
+	-ms-flex-preferred-size: 50%;        
 	flex-basis: 50%;
 	font-weight: bold;
 	color: #FE3F46FF;
 }
 .gray {
 	background-color: #F5F5F5FF;
-}
-.selected-row {
-
 }
