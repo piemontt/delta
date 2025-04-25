@@ -79,8 +79,6 @@ let chart = null;
 const chartRow = document.createElement('tr');
 chartRow.innerHTML = '<td colspan="4"><div id="chart-container"></div></td>';
 
-
-
 data.forEach(function (elem, index) {
     const tr = document.createElement('tr');
     tr.dataset.index = index;
@@ -164,8 +162,4 @@ function createChart(item) {
             enabled: false
         }
     });
-}
-if (data.length > 0) {
-    document.querySelector('tr:nth-child(2)').classList.add('selected-row');
-    createChart(data[0]);
 }
