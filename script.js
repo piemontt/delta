@@ -1,4 +1,3 @@
-console.warn = () => {};
 const data = [
     {
         "category": "Выручка, руб",
